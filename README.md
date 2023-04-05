@@ -29,3 +29,11 @@ play hello.mp3
 play hello.mp4
 unknow type
 ```
+
+## 后续
+
+如果需要递归递归删除子目录下所有.xx后缀文件可以参考[用rm递归递归删除子目录下所有.o后缀文件](https://www.cnblogs.com/UnGeek/p/4319547.html)中的方法：
+
+```Shell
+find . -name "*.o"  | xargs rm -f
+```
