@@ -37,3 +37,9 @@ unknow type
 ```Shell
 find . -name "*.o"  | xargs rm -f
 ```
+
+如果需要通过git提交代码到远程仓库（github）可以参考[如何通过git提交代码到远程仓库（github）](https://zhuanlan.zhihu.com/p/152332683)中的方法：
+
+```Shell
+git push -u origin master
+```

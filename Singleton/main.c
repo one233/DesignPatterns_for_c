@@ -17,7 +17,7 @@ int main(void)
 //       饿汉式   已经初始化好
 void run()
 {
-    User *user = getUserInstance();  //noly one
+    User *user = getUserInstance();  //only one
     User *user2 = getUserInstance();
     printf("----------user1-----------\n");
     user->about(user);

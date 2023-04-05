@@ -45,6 +45,7 @@ static int _update(Observer *this_observer, Wechat_content * content)
     Wechat_user tmp;
 
     Wechat_user *this_user = (void *)this_observer - ((unsigned int)&(tmp.observer) - (unsigned int )&tmp);
+    printf("data2: %d \n",((unsigned int)&(tmp.observer) - (unsigned int )&tmp));
 
     printf("%s %d %s\n",this_user->name,content->type,content->content);
 

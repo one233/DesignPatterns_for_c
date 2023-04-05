@@ -38,6 +38,7 @@ static int   _updatecontent(Subject * this_subject,void *content)
     }
     Official_account tmp ;
     Official_account *account = (void *)this_subject - ((unsigned int)&tmp.subject - (unsigned int )&tmp);
+    printf("data1: %d \n",((unsigned int)&tmp.subject - (unsigned int )&tmp));
     memcpy(&account->content,content,sizeof(Wechat_content));
     return 0;
 }

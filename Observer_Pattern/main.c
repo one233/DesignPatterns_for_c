@@ -27,7 +27,6 @@ void run()
     Wechat_user *teacher = Create_Wechat_user("teacher");
     Wechat_user *soldier = Create_Wechat_user("soldier");
 
-
     //teacher like education
     education->subject.reg_observer(education,&user->observer);
     education->subject.reg_observer(education,&teacher->observer);
